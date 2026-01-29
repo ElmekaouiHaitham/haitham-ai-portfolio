@@ -12,29 +12,34 @@ Professional showcase of end-to-end AI solutions, startup leadership, and compet
 ---
 
 ## 🚀 Professional Projects (NDA Restricted)
-
 ### 1. Intelligent Patent Monitor (USPTO)
-**Role:** Lead AI Engineer | **Client:** Scott (via Upwork)
-* **Objective:** Automate the classification of massive USPTO patent datasets to identify business opportunities.
-* **Technical Stack:** Python, **SetFit (Sentence Transformer Fine-tuning)**, HuggingFace, Pandas.
-* **Key Implementation:** Leveraged few-shot learning with SetFit to achieve high classification accuracy on specialized legal text with minimal labeled data.
+**Domain:** NLP / Legal Tech / Lead Generation
+* **The Challenge:** Building a system to monitor and classify massive volumes of USPTO patent filings to identify business leads with high precision and low latency.
+* **Architecture & Implementation:**
+    * **Few-Shot Learning with SetFit:** Implemented **SetFit (Sentence Transformer Fine-tuning)** to bypass the need for massive labeled datasets. This framework allows the model to learn from just a few examples by fine-tuning a Sentence Transformer on a contrastive objective.
+    * **Classification Pipeline:** Developed a custom pipeline that ingests raw patent XML, extracts key technical claims, and uses cosine similarity in the embedding space to categorize patents into 50+ specialized business buckets.
+    * **Scalability:** Optimized for high throughput, enabling the system to process thousands of filings per hour while maintaining a high F1-score.
+* **Tech Stack:** Python, SetFit, HuggingFace Transformers, Pandas, Scikit-learn.
 > ![Scott's Testimonial](assets/uspto_testimonial.png)
 
-### 2. Maroc AI (Co-Founder & Lead Developer)
-**Role:** Full-Stack AI Engineer
-* **Objective:** Building a B2B AI agency to automate administrative and business workflows in Morocco.
-* **Technical Stack:** **Next.js 15**, TypeScript, Tailwind CSS, Vercel.
-* **Architecture:** Developing agentic commerce and automated customer engagement systems.
-* **Live Site (waitlist):** [maroc-ai.com](https://marocai.online)
+### 2. Maroc AI Agency Infrastructure
+**Domain:** B2B AI Automation / SaaS
+* **The Challenge:** Creating a scalable, high-conversion landing and waitlist system for a Moroccan AI startup focusing on B2B agentic automation.
+* **Modern Web Architecture:**
+    * **Next.js 15 App Router:** Implemented the latest Next.js features, including **Server Components (RSC)** for faster initial page loads and improved SEO performance.
+    * **Edge Deployment:** Optimized for low latency using Vercel’s global Edge network to ensure a seamless experience for Moroccan and international users.
+    * **Agentic Design:** Architecting the roadmap for LLM-based customer engagement agents using streaming APIs for real-time responsiveness.
+* **Tech Stack:** Next.js 15, TypeScript, Tailwind CSS, Vercel, Framer Motion.
+* **Link:** [maroc-ai.com](https://marocai.online)
 
----
-
-## 📈 Competitive Data Science
-
-### Numerai Quantitative Tournament
-**Focus:** Non-stationary financial data and risk management.
-* **Advanced Boosting:** Optimized model performance using **XGBoost**, utilizing a deep understanding of its **Second-Order Taylor Approximation** for custom loss optimization.
-* **Risk Mitigation:** Implementation of **Feature Neutralization** to ensure predictions remain uncorrelated with known risk factors, crucial for generalizable performance in noisy environments.
+## 🚀 Data science Project:
+### Quantitative Financial Modeling (Numerai Tournament)
+**Domain:** Quant Finance / Machine Learning
+* **The Challenge:** Predicting stock market movements using encrypted, highly non-stationary financial data where feature-target relationships shift over "eras."
+* **Advanced Technical Focus:**
+    * **Second-Order Optimization (XGBoost):** Leveraged a deep understanding of **XGBoost's Second-Order Taylor Expansion**. Unlike traditional gradient boosting which uses only the first derivative (gradient), I utilized the **Hessian (curvature)** of the loss function to achieve more stable and precise updates in a volatile financial environment.
+    * **Feature Neutralization & Exposure:** Implemented linear and non-linear **Feature Neutralization** to decorrelate model predictions from "risky" features. This process involves taking the residuals of the prediction vector through linear regression against the feature matrix, ensuring the model identifies true signal interactions rather than over-relying on high-exposure features.
+* **Tech Stack:** Python, XGBoost (Newton Boosting), Scikit-learn, NumerAPI.
 * **Link:** [Numerai Profile](https://numer.ai/~mr_x)
 
 ---
