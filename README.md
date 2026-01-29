@@ -30,7 +30,7 @@ Professional showcase of end-to-end AI solutions, startup leadership, and compet
     * **Edge Deployment:** Optimized for low latency using Vercel’s global Edge network to ensure a seamless experience for Moroccan and international users.
     * **Agentic Design:** Architecting the roadmap for LLM-based customer engagement agents using streaming APIs for real-time responsiveness.
 * **Tech Stack:** Next.js 15, TypeScript, Tailwind CSS, Vercel, Framer Motion.
-* **Link:** [maroc-ai.com](https://marocai.online)
+* **Link:** [marocai.com](https://marocai.online)
 
 ## 🚀 Data science Project:
 ### Quantitative Financial Modeling (Numerai Tournament)
